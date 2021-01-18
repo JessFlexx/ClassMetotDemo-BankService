@@ -97,6 +97,8 @@ namespace ClassMetotDemo
                     break;
             }
 
+            Console.ReadLine();
+
         }
     }
 }
