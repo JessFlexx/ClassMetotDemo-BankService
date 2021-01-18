@@ -34,10 +34,12 @@ namespace ClassMetotDemo.Manager
 
         public  void Show(Customer_Info customer_Info3)
         {
+            Console.WriteLine("-------------------");
             Console.WriteLine("Name:"+customer_Info3.Name);
             Console.WriteLine("Surname:"+customer_Info3.Surname);
             Console.WriteLine("Customer ID:" + customer_Info3.Id);
             Console.WriteLine("Card Number:" + customer_Info3.CardNum);
+            Console.WriteLine("-------------------");
 
         }
 

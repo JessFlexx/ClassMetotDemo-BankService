@@ -59,19 +59,28 @@ namespace ClassMetotDemo
                 case 1:
                     customer_Manager.Add(c10005);
                     Console.WriteLine("\nThe Show Customer ID command ran automatically.");
-                    Console.WriteLine("-------------------");
                     customer_Manager.Show(c10005);
-                    Console.WriteLine("-------------------");
                     break;
                 case 2:
+                    
+                    Console.WriteLine("ID numbers can be in this range, including 10001 and 10004.");
                     Console.WriteLine("Enter Id to DELETE:");
                     int temp2 = Convert.ToInt16(Console.ReadLine());
-                    temp2 -= 10001;
-                    if (temp2 < 0) Console.WriteLine("WRONG ID");
-                    else
-                    customer_Manager.Delete(customers[temp2]);
+                    
+                    if(10000>temp2 || temp2>10006)
+                    Console.WriteLine("ID numbers can be between 10001 and 10004.");
+                    else 
+                    {
+                        temp2 -= 10001;
+                        if (temp2 < 0) 
+                        Console.WriteLine("WRONG ID");
+                        else
+                        customer_Manager.Delete(customers[temp2]);
+                    }
                     break;
+                
                 case 3:
+                    Console.WriteLine("ID numbers can be in this range, including 10001 and 10004.");
                     Console.WriteLine("Enter Id to SHOW:");
                     int temp3 = Convert.ToInt16(Console.ReadLine());
                     temp3 -= 10001;
@@ -80,6 +89,7 @@ namespace ClassMetotDemo
                     customer_Manager.Show(customers[temp3]);
                     
                     break;
+                
                 case 4:
                     Console.WriteLine("-------------------------------");
                     foreach (var list in customers)
