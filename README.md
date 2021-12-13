@@ -1,3 +1,3 @@
 # ClassMetotDemo-BankService
-Demo about bank sevice.
+Demo code about bank service written with C#.
 
